@@ -24,7 +24,7 @@ mkdir tenderduty && cd tenderduty docker run --rm ghcr.io/blockpane/tenderduty:l
 
 Шаг 4. Скачиваем и редактируем конфиг файл
 
-wget -O $HOME/tenderduty/config.yml https://raw.githubusercontent.com/lesnikutsa/lesnik_utsa/main/monitoring/TenderDuty(ru)/config.yml
+wget -O $HOME/tenderduty/config.yml https://github.com/follers/Tenderduty-HAQQ/blob/92e5b231df4c5f0f2a04d54606606b36313d5963/config.yml
 
 Пример конфиг файла
 
