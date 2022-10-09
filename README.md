@@ -8,7 +8,9 @@ Nodes HAQQ monitoring and notification system
 ![image](https://user-images.githubusercontent.com/87209795/194782743-1b5d092d-c63d-44f4-8056-7a80f4f8e7d4.png)
  
 Для установки нам понадобится отдельный сервер, например VPS, можно с уже установленной нодой.
+
 Шаг 1. Подготовка сервера
+
 # обновляем репозитории
 sudo apt update && sudo apt upgrade -y
 
@@ -38,7 +40,7 @@ url:
 ![image](https://user-images.githubusercontent.com/87209795/194782776-e5b99528-eeed-47a2-974c-e4b256454ddb.png)
 ![image](https://user-images.githubusercontent.com/87209795/194782788-c256fcc2-ca30-4759-bc43-f6c0523b7f95.png)
 
- После настройки конфига запускаем:
+После настройки конфига запускаем:
 docker run -d --name tenderduty -p "8888:8888" -p "28686:28686" --restart unless-stopped -v $(pwd)/config.yml:/var/lib/tenderduty/config.yml ghcr.io/blockpane/tenderduty:latest
 # смотрим логи
 docker logs -f --tail 20 tenderduty
